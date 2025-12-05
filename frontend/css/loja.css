@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fdf8f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;   /* aumento no padding superior/inferior */
+    background: #fdf8f0;
+    border-bottom: 1px solid #e1e1e1;
+    gap: 20px;            /* distância entre logo e texto */
+}
+
+.top-buttons a,
+.top-buttons a:visited,
+.top-buttons a:active {
+    color: inherit;         
+    text-decoration: none; 
+}
+.top-buttons {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.top-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;           /* deixa redondo */
+    height: 45px;          /* deixa redondo */
+    background-color: orange;
+    color: white !important;
+    border-radius: 50%;    /* redondo */
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    transition: 0.2s;
+    padding: 10px 18px;
+    height: auto;
+    width: auto;
+    border-radius: 30px; /* deixa arredondado estilo cápsula */
+}
+
+.top-buttons a:hover {
+    background-color: #ff9a00; /* laranja mais forte */
+    transform: scale(1.07);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.icons img {
+    width: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 520px;        /* Ajuste ideal para esse banner */
+    object-fit: contain;  /* MOSTRA A IMAGEM COMPLETA SEM CORTAR */
+    display: block;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner-text p {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+section {
+    padding: 30px 60px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.produto {
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto h3 {
+    margin: 10px 0 5px;
+    font-size: 15px;
+}
+
+.produto p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.produto span {
+    font-size: 13px;
+    color: gray;
+}
+
+
+/* ---------- BOTÃO ADICIONAR AO CARRINHO ---------- */
+
+.btn-add {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 0;
+
+    background: #111; /* preto elegante */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.25s ease-in-out;
+}
+
+/* Efeito hover */
+.btn-add:hover {
+    background: #ffce00;    /* amarelo destaque */
+    color: #111;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Efeito quando clicado */
+.btn-add:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

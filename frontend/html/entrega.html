@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Endereço</title>
+    <link rel="stylesheet" href="../css/entrega.css">
+    <script src="../js/cadastrarEndereco.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"> Krieger Imports </h1>
+        <nav class="nav">
+            <a href="./loja.html">Home</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-endereco">
+        <div class="endereco-box" id="endereco">
+            <h2>Insira seu endereço</h2>
+            <form id="formEndereco">
+                <input type="text" id="cep" placeholder="CEP" required onblur="buscarCEP()">
+                <input type="text" id="logradouro" placeholder="Logradouro" required>
+                <input type="text" id="numero" placeholder="Número" required>
+                <input type="text" id="complemento" placeholder="Complemento">
+
+                <input type="text" id="bairro" placeholder="Bairro" required>
+                <input type="text" id="localidade" placeholder="Cidade" required>
+                <input type="text" id="uf" placeholder="UF" required>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Krieger Imports. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso | Contato</p>
+    </footer>
+
+</body>
+
+</html>

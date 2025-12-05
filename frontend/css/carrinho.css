@@ -1,0 +1,140 @@
+/* ======== RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ======== BODY ======== */
+body {
+    background: #f6f1e7; /* Bege claro */
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======== HEADER ======== */
+.menu {
+    background: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #d9c7a5;
+}
+
+.menu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #6d5d49;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #4a3d2b;
+}
+
+/* ======== TÍTULO ======== */
+h2 {
+    text-align: center;
+    margin: 25px 0;
+    color: #5a4a38;
+}
+
+/* ======== LISTA DE ITENS ======== */
+#lista-carrinho {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid #e2d3b8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ITEM DO CARRINHO */
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.item-img {
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info-carrinho h3 {
+    color: #5a4a38;
+    margin-bottom: 5px;
+}
+
+.info-carrinho p {
+    margin: 4px 0;
+}
+
+.input-qtd {
+    width: 70px;
+    padding: 6px;
+    background: #fcfaf7;
+    border: 1px solid #d7c7ac;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* TOTAL DO ITEM */
+.item-total {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4a3d2b;
+}
+
+/* ======== TOTAL GERAL ======== */
+#total-geral {
+    font-size: 24px;
+    color: #4a3d2b;
+}
+
+/* ======== BOTÕES ======== */
+.btn-limpar,
+.btn-finalizar {
+    padding: 12px 25px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* BOTÃO LIMPAR */
+.btn-limpar {
+    background: #b94848;
+}
+.btn-limpar:hover {
+    background: #993737;
+}
+
+/* BOTÃO FINALIZAR */
+.btn-finalizar {
+    background: #6d5d49;
+}
+.btn-finalizar:hover {
+    background: #4a3d2b;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+    margin-top: auto;
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #d9c7a5;
+}
+
+.footer p {
+    color: #6b5a44;
+}

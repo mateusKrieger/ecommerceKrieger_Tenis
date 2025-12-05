@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <script src="../js/movimentarCarrinho.js" defer></script>
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <header class="menu">
+        <nav>
+            <a href="./loja.html">Home</a>
+        </nav>
+    </header>
+
+    <h2>Seu Carrinho</h2>
+
+    <div id="lista-carrinho"></div>
+
+    <!-- TEMPLATE DE ITEM DO CARRINHO -->
+    <template id="template-item">
+        <div class="item-carrinho">
+            <img class="item-img" width="120">
+
+            <div class="info-carrinho">
+                <h3 class="item-nome"></h3>
+                <p class="item-preco"></p>
+
+                <label>Quantidade:</label>
+                <input type="number" min="1" class="input-qtd">
+
+                <p class="item-total"></p>
+            </div>
+        </div>
+        <hr>
+    </template>
+
+    <!-- TOTAL GERAL -->
+    <h3 id="total-geral" style="text-align:center; margin-top:20px;">Total: R$ 0,00</h3>
+
+    <!-- BOTÃO LIMPAR CARRINHO -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="btn-limpar" onclick="limparCarrinho()" class="btn-limpar">
+            Limpar Carrinho
+        </button>
+    </div>
+
+    <!-- BOTÃO FINALIZAR COMPRA -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="btn-finalizar" onclick="finalizarCompra()" class="btn-finalizar">
+            Finalizar Compra
+        </button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 KriegerImports</p>
+    </footer>
+</body>
+</html>

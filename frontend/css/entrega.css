@@ -1,0 +1,128 @@
+/* ====== RESET BÁSICO ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ====== HEADER ====== */
+.header {
+    width: 100%;
+    background-color: #f5f5f5; /* bege claro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e0dcd0;
+}
+
+.header .logo-img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.header .nav a {
+    color: #333; /* texto escuro sobre bege */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header .nav a:hover {
+    color: #a67c52; /* marrom/bege escuro */
+}
+
+/* ====== HERO / FORMULÁRIO ====== */
+.hero-endereco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff; /* fundo branco */
+    min-height: calc(100vh - 140px);
+}
+
+.endereco-box {
+    background-color: #fdfaf5; /* bege muito claro */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(166, 124, 82, 0.2); /* sombra bege suave */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.endereco-box h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #a67c52; /* título bege escuro */
+}
+
+/* ====== INPUTS ====== */
+.endereco-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #e0dcd0; /* borda bege suave */
+    background-color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.endereco-box input:focus {
+    border-color: #a67c52;
+    outline: none;
+    box-shadow: 0 0 8px rgba(166,124,82,0.3);
+}
+
+/* ====== BOTÃO ====== */
+.endereco-box button {
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a67c52; /* bege escuro */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.endereco-box button:hover {
+    background-color: #8c6239; /* marrom/bege escuro ao hover */
+}
+
+/* ====== FOOTER ====== */
+.footer {
+    background-color: #f5f5f5; /* bege claro */
+    color: #555; /* texto cinza escuro */
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #e0dcd0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+    .endereco-box {
+        padding: 30px 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .nav a {
+        margin: 10px 10px 0 0;
+    }
+}

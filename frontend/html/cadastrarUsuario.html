@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Usuário</title>
+    <link rel="stylesheet" href="../css/style_cadUsuario.css">
+    <script src="../js/cadastrarUsuario.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+         <h1 class="logo">
+            <img src="../logo.png" class="logo-img" onclick="window.location = './html/loja.html'">    
+        </h1>
+        <h2>Krieger Imports</h2>
+        <nav class="nav">
+            <a href="../index.html">Login</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-cadastro">
+        <div class="cadastro-box" id="cadastro">
+            <h2>Insira seus dados</h2>
+            <form>
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="telefone" placeholder="Telefone" required>
+                <input type="text" id="cpf" placeholder="CPF" required>
+                <input type="text" id="identidade" placeholder="RG (opcional)">
+                <input type="password" id="senha" placeholder="Crie uma senha" required>
+                <button type="submit" id="btnCadUsuario">Cadastrar-se</button>
+                <p>Já está cadastrado? <a href="../index.html">Clique Aqui</a></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Krieger Imports. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso | Contato</p>
+    </footer>
+
+</body>
+</html>

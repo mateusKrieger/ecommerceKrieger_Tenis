@@ -1,0 +1,129 @@
+/* ======== RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ======== BODY ======== */
+body {
+    background: #f6f1e7; /* bege claro */
+    color: #4a4a4a;
+}
+
+/* ======== HEADER ======== */
+.header {
+    background: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #d9c7a5;
+}
+
+.logo-img {
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #6d5d49;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #4a3d2b;
+}
+
+/* ======== HERO SECTION ======== */
+.hero-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* ======== FORM CONTAINER ======== */
+.cadastro-box {
+    background: #ffffff;
+    padding: 35px 40px;
+    width: 380px;
+    border-radius: 16px;
+    border: 2px solid #d9c7a5;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.cadastro-box h2 {
+    color: #4a3d2b;
+    margin-bottom: 25px;
+}
+
+/* ======== FORM INPUTS ======== */
+.cadastro-box form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #c8b79a;
+    background: #fdfbf7;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.cadastro-box form input:focus {
+    border-color: #b8a27f;
+    outline: none;
+    box-shadow: 0 0 6px rgba(184, 162, 127, 0.4);
+}
+
+/* ======== BUTTON ======== */
+.cadastro-box button {
+    width: 100%;
+    padding: 12px;
+    background: #d9c7a5;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cadastro-box button:hover {
+    background: #c8b38e;
+}
+
+/* ======== TEXT LINKS ======== */
+.cadastro-box p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.cadastro-box a {
+    color: #6d5d49;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro-box a:hover {
+    color: #4a3d2b;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #d9c7a5;
+}
+
+.footer p {
+    color: #6d5d49;
+    margin: 5px 0;
+}

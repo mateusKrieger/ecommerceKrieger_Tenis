@@ -1,0 +1,140 @@
+/* ======== RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ======== BODY ======== */
+body {
+    background: #f6f1e7; /* Bege claro */
+    color: #4a4a4a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======== HEADER ======== */
+.header {
+    background: #ffffff;
+    padding: 20px;
+    border-bottom: 3px solid #d9c7a5;
+    text-align: center;
+    width: 100%;
+}
+
+.header .logo-img {
+    width: 120px;
+    max-width: 90%;
+}
+
+.header h1{
+    font-size: 20px;
+}
+
+.header h2 {
+    color: #6b5a44;
+    margin-top: 10px;
+}
+
+.nav a {
+    color: #6d5d49;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav a:hover {
+    color: #4a3d2b;
+}
+
+/* ======== HERO LOGIN ======== */
+.hero-login {
+    flex: 1; /* garante que ocupa o espaço total */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* CENTRALIZA verticalmente */
+    padding: 40px 20px;
+}
+
+/* ======== LOGIN BOX ======== */
+.login-box {
+    background: #ffffff;
+    width: 380px;
+    max-width: 100%;  /* evita corte em telas pequenas */
+    padding: 35px;
+    border-radius: 14px;
+    border: 2px solid #e2d3b8;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    color: #5a4a38;
+}
+
+/* ======== FORM INPUTS ======== */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #fcfaf7;
+    border: 1px solid #d7c7ac;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #b3966a;
+}
+
+/* ======== BUTTON ======== */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #b3966a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-box button:hover {
+    background: #94744d;
+}
+
+/* ======== TEXTO INFERIOR ======== */
+.login-box p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-box a {
+    color: #6d5d49;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    color: #4a3d2b;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-top: 3px solid #d9c7a5;
+    margin-top: auto; /* cola o footer no final */
+}
+
+.footer p {
+    color: #6b5a44;
+}
